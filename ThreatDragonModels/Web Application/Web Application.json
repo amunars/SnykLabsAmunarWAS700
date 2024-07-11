@@ -1,0 +1,27 @@
+{
+  "version": "2.2.0",
+  "summary": {
+    "title": "Web Application",
+    "owner": "Alberto Munar",
+    "description": "This is my Seneca College - course: WAS700 assignment 1 - This assignment contains web application hosted in XAMPP, I'm using HTML 5 as front end, the PYTHON API to communicate into MYSQL database server side that host my records. This web application is handling student registration records including courses.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Web app",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.2.0",
+        "cells": [],
+        "description": "Web app"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "users",
+    "threatTop": 0
+  }
+}
