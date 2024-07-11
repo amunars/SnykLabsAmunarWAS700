@@ -1,14 +1,16 @@
 #!F:\Python\python.exe
+
 import mysql.connector
 import cgi
+import os
 
 print("Content-Type:text/html\n\n")
 
 con = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='P@ssw0rd',
-    database='schoolDatabase'
+   host=os.environ.get('DB_HOST'),
+   user=os.environ.get('DB_USER'),
+   password=os.environ.get('DB_PASSWORD'),
+   database=os.environ.get('DB_DATABASE')
 )
 
 form = cgi.FieldStorage()
@@ -26,5 +28,3 @@ else:
     print(f"<h3>This user {user} is not in our system</h3>")
     print("<h3>Please enter the correct username</h3>")
     print('<h4><a href="ForgotPassword.html">Forgot Password</a></h4>')
-
-
