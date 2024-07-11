@@ -1,16 +1,14 @@
 #!F:\Python\python.exe
-
 import mysql.connector
 import cgi
-import os
 
 print("Content-Type:text/html\n\n")
 
 con = mysql.connector.connect(
-   host=os.environ.get('DB_HOST'),
-   user=os.environ.get('DB_USER'),
-   password=os.environ.get('DB_PASSWORD'),
-   database=os.environ.get('DB_DATABASE')
+    host='localhost',
+    user='root',
+    password='P@ssw0rd',
+    database='schoolDatabase'
 )
 
 form = cgi.FieldStorage()
